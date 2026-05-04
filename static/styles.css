@@ -1,13 +1,22 @@
 @font-face {
-  font-family: 'paws';
-  src: url('paws.ttf') format('truetype');
+  font-family: 'Chewy';
+  src: url('Chewy-Regular.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
 
-.paws-font {
-    font-family: "paws", sans-serif;
+@font-face {
+  font-family: 'cattie';
+  src: url('Cattie-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+body {
+    background-color : #e5cd6c;
+    font-family: "Chewy", sans-serif;
 }
 
 .centered-container {
@@ -17,30 +26,17 @@
   padding-top :50px;
 }
 
-.woof {
-    font-size: 150px;
-    color: #2f1313;
-    margin: 0;
-}
-
-.woof-chan {
+.slack-link {
   font-size: 30px;
   font-style: bold, italic;
   color: #2f1313;
   margin: 0;
-  font-family: "Chewy", system-ui;
   font-weight: 400;
 }
 
-.woof-chan:hover {
+.slack-link:hover {
   cursor: pointer;
   color: #87803b;
-}
-
-.woof-logo {
-    height: 150px;
-    width: auto;
-    mix-blend-mode: multiply;
 }
 
 .rsvp-link {
@@ -60,16 +56,12 @@
     transform: scale(1.1);
 }
 
-.chewy-regular {
-  font-family: "Chewy", system-ui;
+.cattie-regular {
+  font-family: "cattie", sans-serif;
   font-weight: 400;
   font-style: normal;
   margin: 0;
-  font-size: 20px;
-}
-
-body {
-    background-color : #e5cd6c;
+  font-size: 50px;
 }
 
 
@@ -122,7 +114,6 @@ button {
   margin: 0;
   padding: 15px;
   background-color: #f9f3b9;
-  font-family: sans-serif;
   font-size: 15px;
   cursor: text
 }
@@ -141,44 +132,11 @@ a:hover {
     margin-top: 40px;
     font-size: 12px;
     color: #87803b;
-    font-family: sans-serif;
 }
 
 button:hover {
     background-color: #cfcba9;
     color: #2f1313;
-}
-
-.dog {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 30px;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.dog img {
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.dogs-section {
-  padding: 20px;
-  text-align: center;
-  transition: transform 0.2s ease;
-
-}
-
-.dogs-card {
-  padding: 20px;
-  text-align: center;
-}
-
-.dogs-card:hover {
-  transform: scale(1.1);
-
 }
 
 .hclink-btn {
@@ -197,6 +155,7 @@ button:hover {
 .hc-image:hover {
     transform: scale(1.1);
 }
+
 /* Paw Mode Button */
 .paw-mode-btn {
     position: fixed;

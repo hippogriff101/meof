@@ -16,9 +16,14 @@ on macOS/Linux:
 source .venv/bin/activate
 ```
 
-on windows:
+on Windows (PowerShell):
 ```commandline
-.\venv\Scripts\activate.bat
+.\.venv\Scripts\Activate.ps1
+```
+
+on Windows (Command Prompt):
+```commandline
+.\.venv\Scripts\activate.bat
 ```
 
 Install dependencies:
