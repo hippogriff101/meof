@@ -1,7 +1,7 @@
 # Meof YSWS
 From the creators of Woof YSWS, we proudly present Meof!
 
-[![Status: Active](https://img.shields.io/badge/Status:-Pending-Orange)](#)
+[![Status: Active](https://img.shields.io/badge/Status:-Pending-orange)](#)
 
 
 ## Installation
