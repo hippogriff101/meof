@@ -108,6 +108,16 @@
              "{{ url_for('static', filename='images/paw_7.png') }}",
              "{{ url_for('static', filename='images/paw_8.png') }}"
          ];
+         const catPawImages = [
+             "{{ url_for('static', filename='images/cat_paw_1.png') }}",
+             "{{ url_for('static', filename='images/cat_paw_2.png') }}",
+             "{{ url_for('static', filename='images/cat_paw_3.png') }}",
+             "{{ url_for('static', filename='images/cat_paw_4.png') }}",
+             "{{ url_for('static', filename='images/cat_paw_5.png') }}",
+             "{{ url_for('static', filename='images/cat_paw_6.png') }}",
+             "{{ url_for('static', filename='images/cat_paw_7.png') }}",
+             "{{ url_for('static', filename='images/cat_paw_8.png') }}"
+         ];
          const pawPrintImage = "{{ url_for('static', filename='images/paw_print_1.png') }}";
          const barkSounds = [
              "{{ url_for('static', filename='sounds/bark_01.mp3') }}",
@@ -125,6 +135,16 @@
              "{{ url_for('static', filename='sounds/bark_13.mp3') }}",
              "{{ url_for('static', filename='sounds/bark_14.mp3') }}"
          ];
+         const catSounds = [
+             "{{ url_for('static', filename='sounds/cat_sound_1.mp3') }}",
+             "{{ url_for('static', filename='sounds/cat_sound_2.mp3') }}",
+             "{{ url_for('static', filename='sounds/cat_sound_3.mp3') }}",
+             "{{ url_for('static', filename='sounds/cat_sound_4.mp3') }}",
+             "{{ url_for('static', filename='sounds/cat_sound_5.mp3') }}",
+             "{{ url_for('static', filename='sounds/cat_sound_6.mp3') }}",
+             "{{ url_for('static', filename='sounds/cat_sound_7.mp3') }}",
+             "{{ url_for('static', filename='sounds/cat_sound_8.mp3') }}"
+         ];
 
          pawModeBtn.addEventListener('click', (e) => {
              e.stopPropagation();
@@ -138,10 +158,13 @@
 
              const clickX = e.clientX;
              const clickY = e.clientY;
+             const isCatMode = Math.random() < 0.5;
+             const pawSet = isCatMode ? catPawImages : pawImages;
+             const soundSet = isCatMode ? catSounds : barkSounds;
 
-             // Play random bark sound
-             const bark = new Audio(barkSounds[Math.floor(Math.random() * barkSounds.length)]);
-             bark.play();
+             // Play a matching random sound
+             const sound = new Audio(soundSet[Math.floor(Math.random() * soundSet.length)]);
+             sound.play();
 
              // Determine which edge to come from (closest edge)
              const distTop = clickY;
@@ -188,7 +211,7 @@
 
              // Create paw element
              const paw = document.createElement('img');
-             paw.src = pawImages[Math.floor(Math.random() * pawImages.length)];
+             paw.src = pawSet[Math.floor(Math.random() * pawSet.length)];
              paw.className = 'paw-element';
              paw.style.width = '200px';
              paw.style.height = pawHeight + 'px';
