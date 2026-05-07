@@ -9,31 +9,32 @@
     <meta name="twitter:title" content="Meof - Hack Club YSWS">
     <meta name="twitter:description" content="Spend 5 or more hours making a dog OR cat themed project and get a animal plushie!">
     <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}" />
-<!--    <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='images/favicon.ico') }}">-->
+    <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='images/paw_print_1.png') }}">
     <title>Meof YSWS</title>
 
 </head>
 <body>
-     <a href="https://hackclub.com" class="hclink-btn" aria-label="Visit the Hack Club website">
-        <img class="hc-image" style="position: absolute; top: 0; left: 10px; border: 0; width: 128px; z-index: 1000;" src="https://assets.hackclub.com/flag-orpheus-top.svg" alt="Hack Club">
-     </a>   
+     <a href="https://hackclub.com" class="hclink-btn" aria-label="Visit the Hack Club website"><img class="hc-image" style="position: absolute; top: 0; left: 10px; border: 0; width: 128px; z-index: 1000;" src="https://assets.hackclub.com/flag-orpheus-top.svg" alt="Hack Club"></a>
+     <a href="https://stardance.hackclub.com/meof" class="hclink-btn" aria-label="Visit the Stardance website"><img class="hc-image" style="position: absolute; top: 0; right: 10px; border: 0; width: 128px; z-index: 1000; margin: 10px;" src="https://stardance.hackclub.com/assets/landing/header/stardance-logo-7d90879e.png" alt="Hack Club"></a>
     <div class="centered-container">
         <h1 style="font-size: 50px;"><span class="cattie-regular">Meow</span> + <b>Woof</b></h1>
-        <p>
-         Spend 5 or more hours making a dog OR cat themed project and get a animal plushie!<br>
-        </p>
-<!-- 
-         <button onclick="Ended()" class="rsvp-link">
-             <img src="{{ url_for('static', filename='images/submit_image.png') }}" alt="Pet me to Submit!!" class="rsvp-image">
-        </button>
--->
-     </div>
+        <div class="centered-container subhead">
+            <p>A <a href="https://stardance.hackclub.com/meof">Stardance</a> sidequest!</p>
+            <p>
+            Make a dog OR cat themed project and get a animal plushie!<br>
+            </p>
+        </div>
+    </div>
 
      <div class="faq-section">
-         <h2  style="font-size: 50px">FAQ</h2>
+         <h3 style="font-size: 50px">FAQ</h3>
          <details class="faq-item">
              <summary >What is Meof?</summary>
              <p >Meof is a Hack Club YSWS brought to you by the creators of <a href="https://woof.hackclub.com">Woof</a>! We are combining two older YSWS's into one. </p>
+         </details>
+         <details class="faq-item">
+             <summary >What is Stardance?</summary>
+             <p><a href="https://stardance.hackclub.com/meof">Stardance</a> is a free online summer program for teens 13–18. Build any technical project you want — websites, games, apps, hardware — log your hours, and earn real prizes! Sponsored by NASA, AMD and GitHub.</p>
          </details>
          <details class="faq-item">
              <summary >What is Hackatime?</summary>
@@ -47,16 +48,32 @@
              <summary >What can I build?</summary>
              <p >Anything to do with dogs or cats! It could be a website, an app, or even a hardware project.</p>
          </details>
+         <details class="faq-item">
+             <summary >Why is this a thing?</summary>
+            <p>This sidequest comes from the people who made <a href="https://woof.hackclub.com">Woof</a> a standalone YSWS that ran at the start of 2026. You spent 5 hours codinga dog themed project and get a dog plushie! Our sponsor, @AVD, also ran <a href="https://meow.hackclub.com">Meow</a> which is the same consept but with cats!!</p>
+         </details>
      </div>
    
+     <div class="faq-section">
+        <h3 style="font-size: 50px;">Prizes</h3>
+        <div class="prize-item">
+            <img src="{{ url_for('static', filename='images/prizes/game.png') }}" alt="Exploding Cats Game Box">
+            <p>Exploding Cats - Fulfilled Locally</p>
+        </div>
+        <div class="prize-item">
+            <img src="" alt="HCB Grant Card & Plushie">
+            <p>$25 HCB Grant Card to purches a plushie!</p>
+        </div>
+        <div class="prize-item">
+            <img src="" alt="HCB $25 Card with dog shelter design">
+            <p>$25 Donation to a cat or dog charity in Vermont</p>
+        </div>
+     </div>
      <div class="contact-section">
-        <h2  style="font-size: 50px">Contact</h2>
+        <h3  style="font-size: 50px">Contact</h3>
         <details class="faq-item ">
              <summary>Slack</summary>
-             <p>Hack Club Slack is used to connect hackers from around the globe! You can sign up now <a href="https://hackclub.com/slack">here</a>!</p>
-            <p>Head over to <a class="slack-link" href="https://hackclub.enterprise.slack.com/archives/C0B1691132L">#meof</a> on Slack when your set up!</p>
-            <br>
-            <p>You can also visit #cats or #dogs, whichever you prefer!</p>
+             <p>Hack Club Slack is used to connect hackers from around the globe! You can sign up now <a href="https://hackclub.com/slack">here</a>! Head over to <a href="https://hackclub.enterprise.slack.com/archives/C0B1691132L">#meof</a> on Slack when your set up! You can also visit #cats or #dogs, whichever you prefer!</p>
          </details>
         <details class="faq-item">
              <summary>Email and DM</summary>
@@ -66,11 +83,11 @@
      </div>
      
      <footer class="credits">
-         Made with ❤️ by Hack Clubbers @dsg and @Freddie! Dog Artwork by @safia!
+         Made with ❤️ by Hack Clubbers @dsg and @Freddie! Artwork by @safia!
          <br><br>
          <button onclick="window.location.href='https://github.com/hippogriff101/meof'">Code is open sourced here!</button>
          <br><br>
-         <p>© 2026 Hack Club. 501(c)(3) nonprofit (EIN: 81-2908499)</p>
+         <p>© 2026 <a href="https://hackclub.com">Hack Club</a> 501(c)(3) nonprofit (EIN: 81-2908499)</p>
      </footer>
 
      <!-- Paw Mode Button -->
