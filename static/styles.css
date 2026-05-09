@@ -24,6 +24,12 @@
 
 body {
     background-color : #0a0a1a ;
+    background-image: url('https://cdn.hackclub.com/019e0e6d-37e5-7788-8e3f-6e9fe5799f4a/meof_background_flattened.webp');
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    /*you can also use background-attachment: fixed, both look good*/
+    background-position: center;
+    background-size: cover;
     color: #f0f0f0;
     font-family: "Chewy", sans-serif;
 }
