@@ -1,6 +1,10 @@
 # Meof YSWS
 From the creators of Woof YSWS, we proudly present Meof!
 
+A _potential_ Stardance sidequest!
+
+Make a dog OR cat themed project and get a animal plushie!
+
 [![Status: Active](https://img.shields.io/badge/Status:-Pending-orange)](#)
 
 
